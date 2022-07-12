@@ -1,5 +1,5 @@
 import  React  from 'react'
-import Header from './Components/Header/Header.component.jsx'
+import Header from '../Components/Header/Header.component.jsx'
 import { Link } from 'react-router-dom'
 
 const About = () => {

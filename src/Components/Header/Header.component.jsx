@@ -1,12 +1,9 @@
 import { React } from 'react'
 import logo from '../../assets/img/logo.svg'
 import { menu } from './Header.component'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
-import { useHistory } from 'react-router-dom/cjs/react-router-dom';
-
 const Header = () => {
-    const history = useHistory()
 
     
     return(
@@ -22,7 +19,7 @@ const Header = () => {
 
             <div className={styles['auth-buttons']}>
 
-                <button className={styles['login-button']} onClick={()=>{ history.push('/about')}}>Login</button>
+                <button className={styles['login-button']}>Login</button>
                 <button className={styles['sign-up']}>Sign up</button>
 
             </div>

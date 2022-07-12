@@ -1,8 +1,8 @@
-import Articles from "./Components/Articles/Articles.jsx"
-import Header from "./Components/Header/Header.component.jsx"
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import About from './About.jsx'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
+// Pages
+import About from './Pages/About.jsx'
+import Home from './Pages/Home.jsx'
 function App() {
 
   return (
@@ -10,26 +10,16 @@ function App() {
       <div className='container'>
         
         
+              
+              
     
-        <Router>
-          <Switch>
-
-            <Route path="/" exact={true}>
+            <Router>
+              <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/about' element={<About/>}/>
               
-              <Header/>
-              <Articles/>
-
-            </Route>
-
-            <Route path="/About">
-
-              <About/>
-              
-            </Route>
-
-
-          </Switch>
-        </Router>
+              </Routes>
+            </Router>
     
 
       
